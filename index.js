@@ -209,4 +209,4 @@ client.on("message", async message => {
     }
 });
 
-client.login("bot token");
+bot.login(process.env.token);
