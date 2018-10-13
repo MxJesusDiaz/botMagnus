@@ -135,4 +135,4 @@ if(cmd === `${prefix}leave`){
 }
   });
 
-bot.login(process.env.BOT_TOKEN);
+bot.login(process.env.token);
