@@ -130,8 +130,8 @@ function play(connection, message) {
     });
 
 }
-var servers = {};
-var prefix = `${prefix}`;
+let servers = {};
+let prefix = `${prefix}m`;
 client.on("message", async message => {
     var args = message.content.substring(prefix.length).split(" ");
     if (!message.content.startsWith(prefix)) return;
