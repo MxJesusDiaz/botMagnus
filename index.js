@@ -93,7 +93,7 @@ bot.on("message", async message => {
 
    if(cmd === `${prefix}help`){
     let bicon = bot.user.displayAvatarURL;
-    let response = new Discord.RichEmbed().setDescription("¡La ayuda ha sido enviada!").addField("**Verifica tus mensajes directos 📨**");
+    let response = new Discord.RichEmbed().setDescription("¡La ayuda ha sido enviada!").addField(any,"**Verifica tus mensajes directos 📨**");
     return message.channel.send(response);
     let bothelp = new Discord.RichEmbed()
     .setDescription("Comandos Disponibles.")
