@@ -134,7 +134,7 @@ let servers = {};
 let prefix = botconfig.prefix;
 client.on("message", async message => {
     var args = message.content.substring(prefix.length).split(" ");
-    if (!message.content.startsWith(prefix)) return;
+    if (!cmd === `${prefix}music`) return;
     switch (args[0].toLowerCase()) {
         case "mplay":
             if (!message.guild.member(client.user).hasPermission('SPEAK')) return message.channel.send('**Sorry, but i cant join/speak in this channel!**').catch(console.error);
