@@ -9,6 +9,7 @@
   "author": "MxJesusDiaz | Alex",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^11.4.2"
+    "discord.js": "^11.4.2",
+    "ytdl-core": "^0.26.1"
   }
 }
