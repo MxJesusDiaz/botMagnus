@@ -127,6 +127,12 @@ bot.on("message", async message => {
 
    message.channel.send(`Ahora estas escuchando: **${info.title}**`);
   }
+
+
+if(cmd === `${prefix}leave`){
+  message.guild.me.voiceChannel.leave();
+  message.channel.send("Saliendo del canal....");
+}
   });
 
-bot.login(process.env.token);
+bot.login(process.env.BOT_TOKEN);
