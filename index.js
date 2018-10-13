@@ -93,7 +93,8 @@ bot.on("message", async message => {
 
    if(cmd === `${prefix}help`){
     let bicon = bot.user.displayAvatarURL;
-    let response = new Discord.RichEmbed().addField("¡La ayuda ha sido enviada!").addField("**Verifica tus mensajes directos 📨**")
+    let response = new Discord.RichEmbed().addField("¡La ayuda ha sido enviada!").addField("**Verifica tus mensajes directos 📨**");
+    return message.channel.send(response);
     let bothelp = new Discord.RichEmbed()
     .setDescription("Comandos Disponibles.")
     .setColor("#56f442")
@@ -101,8 +102,9 @@ bot.on("message", async message => {
     .addField("?serverinfo: Muestra información del servidor")
     .addField("?botinfo: Muestra información del Bot")
     .addField("?report <user> <reason>: Reporta a un jugador. ");
-    return message.channel.send()
     return message.author.send(bothelp);
+
+  
    }
 
    if(cmd === `${prefix}say`){
